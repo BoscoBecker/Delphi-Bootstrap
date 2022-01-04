@@ -3,12 +3,16 @@ object LiveAlert: TLiveAlert
   Top = 0
   Width = 638
   Height = 58
+  Padding.Left = 2
+  Padding.Top = 2
+  Padding.Right = 2
+  Padding.Bottom = 2
   TabOrder = 0
   object Shape: TPanel
-    Left = 0
-    Top = 0
-    Width = 638
-    Height = 58
+    Left = 2
+    Top = 2
+    Width = 634
+    Height = 54
     Align = alClient
     Alignment = taLeftJustify
     BevelOuter = bvNone
@@ -22,11 +26,15 @@ object LiveAlert: TLiveAlert
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    ExplicitWidth = 638
+    ExplicitHeight = 58
     object Close: TImage
-      Left = 575
+      Left = 571
       Top = 0
       Width = 63
-      Height = 58
+      Height = 54
       Cursor = crHandPoint
       Align = alRight
       Center = True

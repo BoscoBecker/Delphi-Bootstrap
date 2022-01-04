@@ -8,12 +8,12 @@ uses
   Vcl.ExtCtrls;
 
 {$SCOPEDENUMS ON}
- Type
+Type
   TStyle = (Primary, Secondary, Success, Danger, Warning, Info, Light, Dark);
 {$SCOPEDENUMS OFF}
 
 type
-  TLiveAlert = class(TFrame)
+  TLiveAlert = class sealed (TFrame)
     Shape: TPanel;
     Close: TImage;
     procedure CloseClick(Sender: TObject);
@@ -25,8 +25,6 @@ type
     procedure SetStyleAlert(const Value: TStyle);
     procedure SetTextAlert(const Value: String);
     procedure SetShowALert(const Value: boolean);
-    { Private declarations }
-  protected
     procedure Primary;
     procedure Secondary;
     procedure Success;
@@ -35,16 +33,12 @@ type
     procedure Info;
     procedure Ligth;
     procedure Dark;
-
   public
     procedure MakeRounded(Control: TWinControl);
-
   published
     property StyleAlert: TStyle read FStyleAlert write SetStyleAlert;
     property TextAlert: String read FTextAlert write SetTextAlert;
     property ShowALert: boolean read FShowALert write SetShowALert;
-
-    //638X58
   end;
 
 procedure Register;
@@ -153,13 +147,13 @@ var
 begin
   with Control do
   begin
-     R := ClientRect;
-     rgn := CreateRoundRectRgn(R.Left, R.Top, R.Right, R.Bottom, 5, 5);
-     Perform(EM_GETRECT, 0, lParam(@r));
-     InflateRect(r, - 5, - 5);
-     Perform(EM_SETRECTNP, 0, lParam(@r));
-     SetWindowRgn(Handle, rgn, True);
-     Invalidate;
+    R := ClientRect;
+    rgn := CreateRoundRectRgn(R.Left, R.Top, R.Right, R.Bottom, 5, 5);
+    Perform(EM_GETRECT, 0, lParam(@r));
+    InflateRect(r, - 5, - 5);
+    Perform(EM_SETRECTNP, 0, lParam(@r));
+    SetWindowRgn(Handle, rgn, True);
+    Invalidate;
   end;
 end;
 end.

@@ -128,7 +128,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\..\..\Public\Documents\Embarcadero\Studio\20.0\Bpl\Alert.bpl" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="src\Alert\Alert.bpl" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Alert.bpl</RemoteName>
                         <Overwrite>true</Overwrite>

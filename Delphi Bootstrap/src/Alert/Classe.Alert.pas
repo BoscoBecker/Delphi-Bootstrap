@@ -132,13 +132,13 @@ var
 begin
   with Control do
   begin
-     R := ClientRect;
-     rgn := CreateRoundRectRgn(R.Left, R.Top, R.Right, R.Bottom, 5, 5);
-     Perform(EM_GETRECT, 0, lParam(@r));
-     InflateRect(r, - 5, - 5);
-     Perform(EM_SETRECTNP, 0, lParam(@r));
-     SetWindowRgn(Handle, rgn, True);
-     Invalidate;
+    R := ClientRect;
+    rgn := CreateRoundRectRgn(R.Left, R.Top, R.Right, R.Bottom, 5, 5);
+    Perform(EM_GETRECT, 0, lParam(@r));
+    InflateRect(r, - 5, - 5);
+    Perform(EM_SETRECTNP, 0, lParam(@r));
+    SetWindowRgn(Handle, rgn, True);
+    Invalidate;
   end;
 end;
 

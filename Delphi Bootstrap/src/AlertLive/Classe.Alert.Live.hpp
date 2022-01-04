@@ -39,7 +39,7 @@ class DELPHICLASS TLiveAlert;
 //-- type declarations -------------------------------------------------------
 enum class DECLSPEC_DENUM TStyle : unsigned char { Primary, Secondary, Success, Danger, Warning, Info, Light, Dark };
 
-class PASCALIMPLEMENTATION TLiveAlert : public Vcl::Forms::TFrame
+class PASCALIMPLEMENTATION TLiveAlert : /*[[sealed]]*/ public Vcl::Forms::TFrame
 {
 	typedef Vcl::Forms::TFrame inherited;
 	
@@ -56,8 +56,6 @@ private:
 	void __fastcall SetStyleAlert(const TStyle Value);
 	void __fastcall SetTextAlert(const System::UnicodeString Value);
 	void __fastcall SetShowALert(const bool Value);
-	
-protected:
 	void __fastcall Primary();
 	void __fastcall Secondary();
 	void __fastcall Success();

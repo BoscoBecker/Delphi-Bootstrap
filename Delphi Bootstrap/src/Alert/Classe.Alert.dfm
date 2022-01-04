@@ -32,9 +32,5 @@ object Alert: TAlert
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 6
-    ExplicitTop = -16
-    ExplicitWidth = 341
-    ExplicitHeight = 73
   end
 end
