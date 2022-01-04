@@ -9,6 +9,8 @@ uses
 type
   TForm3 = class(TForm)
     Badge1: TBadge;
+    Badge2: TBadge;
+    Badge3: TBadge;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -27,7 +29,15 @@ procedure TForm3.FormCreate(Sender: TObject);
 begin
   Badge1.MakeRounded(Badge1);
   Badge1.MakeRounded(Badge1.Notification);
-  Badge1.CountNotification := '10';
+
+
+  Badge1.MakeRounded(Badge2);
+  Badge1.MakeRounded(Badge2.Notification);
+
+  Badge1.MakeRounded(Badge3);
+  Badge1.MakeRounded(Badge3.Notification);
+
+
 end;
 
 end.

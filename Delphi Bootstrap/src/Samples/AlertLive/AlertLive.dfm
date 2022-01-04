@@ -96,8 +96,8 @@ object Form2: TForm2
   object GroupBox1: TGroupBox
     Left = 24
     Top = 8
-    Width = 433
-    Height = 153
+    Width = 449
+    Height = 137
     TabOrder = 5
     object LiveAlert1: TLiveAlert
       Left = 24

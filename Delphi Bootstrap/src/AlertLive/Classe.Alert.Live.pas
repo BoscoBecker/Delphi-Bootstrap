@@ -13,7 +13,7 @@ Type
 {$SCOPEDENUMS OFF}
 
 type
-  TLiveAlert = class sealed (TFrame)
+  TLiveAlert = class (TFrame)
     Shape: TPanel;
     Close: TImage;
     procedure CloseClick(Sender: TObject);

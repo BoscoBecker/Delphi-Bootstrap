@@ -26,10 +26,6 @@ object LiveAlert: TLiveAlert
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 0
-    ExplicitTop = 0
-    ExplicitWidth = 638
-    ExplicitHeight = 58
     object Close: TImage
       Left = 571
       Top = 0

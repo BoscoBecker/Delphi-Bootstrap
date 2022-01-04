@@ -12,6 +12,9 @@
         <Projects Include="..\Badges\Badges.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="..\BadgesPositioned\BadgesPositioned.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="SampleAlert.dproj">
             <Dependencies/>
         </Projects>
@@ -19,6 +22,9 @@
             <Dependencies/>
         </Projects>
         <Projects Include="Badge\SampleBadge.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BadgePositioneted\BadgePositioneted.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -56,6 +62,15 @@
     <Target Name="Badges:Make">
         <MSBuild Projects="..\Badges\Badges.dproj" Targets="Make"/>
     </Target>
+    <Target Name="BadgesPositioned">
+        <MSBuild Projects="..\BadgesPositioned\BadgesPositioned.dproj"/>
+    </Target>
+    <Target Name="BadgesPositioned:Clean">
+        <MSBuild Projects="..\BadgesPositioned\BadgesPositioned.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BadgesPositioned:Make">
+        <MSBuild Projects="..\BadgesPositioned\BadgesPositioned.dproj" Targets="Make"/>
+    </Target>
     <Target Name="SampleAlert">
         <MSBuild Projects="SampleAlert.dproj"/>
     </Target>
@@ -83,14 +98,23 @@
     <Target Name="SampleBadge:Make">
         <MSBuild Projects="Badge\SampleBadge.dproj" Targets="Make"/>
     </Target>
+    <Target Name="BadgePositioneted">
+        <MSBuild Projects="BadgePositioneted\BadgePositioneted.dproj"/>
+    </Target>
+    <Target Name="BadgePositioneted:Clean">
+        <MSBuild Projects="BadgePositioneted\BadgePositioneted.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BadgePositioneted:Make">
+        <MSBuild Projects="BadgePositioneted\BadgePositioneted.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Alert;AlertLive;Badges;SampleAlert;SampleAlertLive;SampleBadge"/>
+        <CallTarget Targets="Alert;AlertLive;Badges;BadgesPositioned;SampleAlert;SampleAlertLive;SampleBadge;BadgePositioneted"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Alert:Clean;AlertLive:Clean;Badges:Clean;SampleAlert:Clean;SampleAlertLive:Clean;SampleBadge:Clean"/>
+        <CallTarget Targets="Alert:Clean;AlertLive:Clean;Badges:Clean;BadgesPositioned:Clean;SampleAlert:Clean;SampleAlertLive:Clean;SampleBadge:Clean;BadgePositioneted:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Alert:Make;AlertLive:Make;Badges:Make;SampleAlert:Make;SampleAlertLive:Make;SampleBadge:Make"/>
+        <CallTarget Targets="Alert:Make;AlertLive:Make;Badges:Make;BadgesPositioned:Make;SampleAlert:Make;SampleAlertLive:Make;SampleBadge:Make;BadgePositioneted:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
