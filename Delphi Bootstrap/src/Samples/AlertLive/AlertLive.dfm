@@ -5,7 +5,7 @@ object Form2: TForm2
   Caption = 'Live example'
   ClientHeight = 512
   ClientWidth = 510
-  Color = clBtnFace
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

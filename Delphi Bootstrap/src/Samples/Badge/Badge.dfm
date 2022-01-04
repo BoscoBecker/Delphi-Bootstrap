@@ -4,7 +4,7 @@ object Form3: TForm3
   Caption = 'Form3'
   ClientHeight = 234
   ClientWidth = 509
-  Color = clBtnFace
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

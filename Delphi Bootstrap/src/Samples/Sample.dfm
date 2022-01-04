@@ -5,7 +5,7 @@ object Form1: TForm1
   Caption = 'Alerts'
   ClientHeight = 578
   ClientWidth = 636
-  Color = clBtnFace
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
