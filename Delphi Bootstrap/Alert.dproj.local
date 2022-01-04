@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/01/03 20:14:58.359,=rtl.dcp</Transaction>
+    <Transaction>2022/01/03 20:15:22.119,C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Alert.dproj=C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2022/01/03 20:16:04.698,=C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/03 20:42:34.953,C:\Users\Familia\Desktop\Delphi Bootstrap\src\Alert\Classe.Alert.pas=C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/03 20:42:34.953,C:\Users\Familia\Desktop\Delphi Bootstrap\src\Alert\Classe.Alert.dfm=C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/03 20:44:39.783,=vcl.dcp</Transaction>
+    <Transaction>2022/01/03 20:45:31.450,C:\Users\Familia\Desktop\Delphi Bootstrap\BootstrapDelphi.dproj=C:\Users\Familia\Documents\Embarcadero\Studio\Projects\Alert.dproj</Transaction>
+    <Transaction>2022/01/03 20:51:18.832,C:\Users\Familia\Desktop\Delphi Bootstrap\Alert.dproj=C:\Users\Familia\Desktop\Delphi Bootstrap\BootstrapDelphi.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

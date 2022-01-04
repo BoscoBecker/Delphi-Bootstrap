@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F5427875-8B05-4951-BAB2-80E6C9296AA5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\Alert.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SampleProjeto.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Alert">
+        <MSBuild Projects="..\..\Alert.dproj"/>
+    </Target>
+    <Target Name="Alert:Clean">
+        <MSBuild Projects="..\..\Alert.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Alert:Make">
+        <MSBuild Projects="..\..\Alert.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleProjeto">
+        <MSBuild Projects="SampleProjeto.dproj"/>
+    </Target>
+    <Target Name="SampleProjeto:Clean">
+        <MSBuild Projects="SampleProjeto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleProjeto:Make">
+        <MSBuild Projects="SampleProjeto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Alert;SampleProjeto"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Alert:Clean;SampleProjeto:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Alert:Make;SampleProjeto:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

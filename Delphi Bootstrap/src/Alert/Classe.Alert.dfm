@@ -1,0 +1,25 @@
+object Alert: TAlert
+  Left = 0
+  Top = 0
+  Width = 302
+  Height = 56
+  TabOrder = 0
+  object shape: TPanel
+    Left = 0
+    Top = 0
+    Width = 302
+    Height = 56
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'A simple primary alert'#8212'check it out!'
+    Color = 14342136
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = 2695300
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end
