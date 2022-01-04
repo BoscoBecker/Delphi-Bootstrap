@@ -6,7 +6,13 @@
         <Projects Include="..\..\Alert.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="SampleProjeto.dproj">
+        <Projects Include="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Package1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SampleAlert.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Project2.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -26,23 +32,41 @@
     <Target Name="Alert:Make">
         <MSBuild Projects="..\..\Alert.dproj" Targets="Make"/>
     </Target>
-    <Target Name="SampleProjeto">
-        <MSBuild Projects="SampleProjeto.dproj"/>
+    <Target Name="Package1">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Package1.dproj"/>
     </Target>
-    <Target Name="SampleProjeto:Clean">
-        <MSBuild Projects="SampleProjeto.dproj" Targets="Clean"/>
+    <Target Name="Package1:Clean">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Package1.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="SampleProjeto:Make">
-        <MSBuild Projects="SampleProjeto.dproj" Targets="Make"/>
+    <Target Name="Package1:Make">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Package1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleAlert">
+        <MSBuild Projects="SampleAlert.dproj"/>
+    </Target>
+    <Target Name="SampleAlert:Clean">
+        <MSBuild Projects="SampleAlert.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleAlert:Make">
+        <MSBuild Projects="SampleAlert.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project2">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Project2.dproj"/>
+    </Target>
+    <Target Name="Project2:Clean">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Project2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project2:Make">
+        <MSBuild Projects="C:\Users\DevDelphi\Documents\Embarcadero\Studio\Projects\Project2.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="Alert;SampleProjeto"/>
+        <CallTarget Targets="Alert;Package1;SampleAlert;Project2"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Alert:Clean;SampleProjeto:Clean"/>
+        <CallTarget Targets="Alert:Clean;Package1:Clean;SampleAlert:Clean;Project2:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Alert:Make;SampleProjeto:Make"/>
+        <CallTarget Targets="Alert:Make;Package1:Make;SampleAlert:Make;Project2:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

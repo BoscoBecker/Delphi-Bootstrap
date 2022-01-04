@@ -1,9 +1,10 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 201
-  ClientWidth = 447
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Alerts'
+  ClientHeight = 578
+  ClientWidth = 636
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,20 +16,174 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Alert1: TAlert
-    Left = 41
-    Top = 40
-    Width = 280
-    Height = 41
-    Color = 14869477
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = 4277835
-    Font.Height = -11
-    Font.Name = 'Tahoma'
-    Font.Style = []
+    Left = 48
+    Top = 2
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 16700598
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
     ParentBackground = False
     ParentColor = False
-    ParentFont = False
     TabOrder = 0
-    StyleAlert = secondary
+    StyleAlert = Primary
+  end
+  object Alert2: TAlert
+    Left = 48
+    Top = 64
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 14210771
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    StyleAlert = Secondary
+  end
+  object Alert3: TAlert
+    Left = 48
+    Top = 126
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 13425594
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+    StyleAlert = Success
+  end
+  object Alert4: TAlert
+    Left = 48
+    Top = 196
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 13091573
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 3
+    StyleAlert = Danger
+  end
+  object Alert5: TAlert
+    Left = 48
+    Top = 258
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 11922687
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 4
+    StyleAlert = Warning
+  end
+  object Alert6: TAlert
+    Left = 48
+    Top = 322
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 16510902
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 5
+    StyleAlert = Info
+  end
+  object Alert7: TAlert
+    Left = 48
+    Top = 384
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 16711165
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 6
+    StyleAlert = Light
+  end
+  object Alert8: TAlert
+    Left = 48
+    Top = 446
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 12566204
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 7
+    StyleAlert = Dark
+  end
+  object Alert9: TAlert
+    Left = 48
+    Top = 508
+    Width = 545
+    Height = 56
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Color = 12566204
+    Padding.Left = 2
+    Padding.Top = 2
+    Padding.Right = 2
+    Padding.Bottom = 2
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 8
+    StyleAlert = Dark
   end
 end
