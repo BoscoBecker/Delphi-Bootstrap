@@ -14,33 +14,37 @@ object Form3: TForm3
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Badge1: TBadge
+  inline Badge1: TBadge
     Left = 8
     Top = 24
     Width = 289
     Height = 38
     TabOrder = 0
-    StyleBadge = Success
-    CountNotification = '100'
-    CaptionNotification = ' Vendas realizadas  hoje'
+    ExplicitLeft = 8
+    ExplicitTop = 24
+    ExplicitWidth = 289
+    ExplicitHeight = 38
   end
-  object Badge2: TBadge
+  inline Badge2: TBadge
     Left = 174
     Top = 88
     Width = 265
     Height = 38
     TabOrder = 1
-    StyleBadge = Primary
-    CaptionNotification = ' Notifica'#231#245'es de clientes'
+    ExplicitLeft = 174
+    ExplicitTop = 88
+    ExplicitWidth = 265
+    ExplicitHeight = 38
   end
-  object Badge3: TBadge
+  inline Badge3: TBadge
     Left = 280
     Top = 152
     Width = 241
     Height = 38
     TabOrder = 2
-    StyleBadge = Danger
-    CountNotification = '10'
-    CaptionNotification = ' Clientes inadimplentes'
+    ExplicitLeft = 280
+    ExplicitTop = 152
+    ExplicitWidth = 241
+    ExplicitHeight = 38
   end
 end

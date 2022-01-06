@@ -24,7 +24,6 @@ object BadgePositioneted: TBadgePositioneted
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 69
   end
   object notifications: TPanel
     Left = 65
@@ -45,6 +44,5 @@ object BadgePositioneted: TBadgePositioneted
     ParentBackground = False
     ParentFont = False
     TabOrder = 1
-    ExplicitWidth = 37
   end
 end
