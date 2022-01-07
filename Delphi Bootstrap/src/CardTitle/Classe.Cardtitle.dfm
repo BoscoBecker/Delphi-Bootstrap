@@ -19,9 +19,6 @@ object TCardTitle: TTCardTitle
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 9
-    ExplicitTop = 0
-    ExplicitWidth = 243
     object Image: TImage
       Left = 0
       Top = 0
@@ -46,7 +43,6 @@ object TCardTitle: TTCardTitle
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitWidth = 243
       object captionCard: TLabel
         Left = 8
         Top = 9

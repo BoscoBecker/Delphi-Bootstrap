@@ -52,7 +52,7 @@ begin
   inherited;
   FCardPicture := TPicture.Create;
   button.OnClick := EmbeddedButtonClick;
-  Brush.Style := bsClear;
+  self.Brush.Style := bsClear;
 end;
 
 procedure TTCardTitle.CreateParams(var Params: TCreateParams);

@@ -14,15 +14,4 @@ object Form5: TForm5
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object TCardTitle1: TTCardTitle
-    Left = 144
-    Top = 24
-    Width = 243
-    Height = 356
-    Color = clWhite
-    ParentBackground = False
-    ParentColor = False
-    TabOrder = 0
-    OnButtonClick = TCardTitle1ButtonClick
-  end
 end
