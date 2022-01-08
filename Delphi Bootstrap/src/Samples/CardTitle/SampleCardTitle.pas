@@ -8,8 +8,11 @@ uses
 
 type
   TForm5 = class(TForm)
+    TCardTitle1: TTCardTitle;
+    TCardTitle2: TTCardTitle;
     procedure FormCreate(Sender: TObject);
     procedure TCardTitle1ButtonClick(Sender: TObject);
+    procedure TCardTitle2ButtonClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,13 +35,24 @@ begin
   TCardTitle1.MakeRounded(TCardTitle1.shape);
   TCardTitle1.MakeRounded(TCardTitle1.button);
   TCardTitle1.OnClick:= TCardTitle1.OnButtonClick;
-  TCardTitle1.Image.Picture.LoadFromFile('C:\Users\DevDelphi\Desktop\473b6384fa.jpg');
+  //TCardTitle1.Image.Picture.LoadFromFile('C:\Users\Familia\Desktop\cocacola.jpg');
+
+  TCardTitle2.MakeRounded(TCardTitle2);
+  TCardTitle2.MakeRounded(TCardTitle2.shapeInterno);
+  TCardTitle2.MakeRounded(TCardTitle2.shape);
+  TCardTitle2.MakeRounded(TCardTitle2.button);
+  TCardTitle2.OnClick:= TCardTitle2.OnButtonClick;
 
 end;
 
 procedure TForm5.TCardTitle1ButtonClick(Sender: TObject);
 begin
-  ShowMessage('hey');
+  ShowMessage('Button 1');
+end;
+
+procedure TForm5.TCardTitle2ButtonClick(Sender: TObject);
+begin
+  ShowMessage('Button 2');
 end;
 
 end.

@@ -20,6 +20,8 @@ type
     FStyleBadge: TStyle;
     FCountNotification: string;
     FCaptionShape: string;
+    fOnButtonClick: TNotifyEvent;
+    procedure EmbeddedButtonClick(Sender: TObject);
     procedure CreateParams(var Params: TCreateParams); override;
     procedure PaintWindow(DC: HDC); override;
     procedure SetStyleABadge(const Value: TStyle);
@@ -34,6 +36,8 @@ type
     procedure Dark;
     procedure SetCountNotification(const Value: string);
     procedure SetCaptionShape(const Value: string);
+  protected
+     procedure DoEmbeddedButtonClick; virtual;
   public
     constructor Create(AOwner: TComponent); override;
     procedure MakeRounded(Control: TWinControl);
@@ -41,6 +45,7 @@ type
     property StyleBadge: TStyle read FStyleBadge write SetStyleABadge;
     property CountNotification: string read FCountNotification write SetCountNotification;
     property CaptionShape: string read FCaptionShape write SetCaptionShape;
+    property OnButtonClick: TNotifyEvent read fOnButtonClick write fOnButtonClick;
   end;
 
 procedure register;
@@ -58,6 +63,7 @@ constructor TBadgePositioneted.Create(AOwner: TComponent);
 begin
   inherited;
   Brush.Style := bsClear;
+  shape.OnClick := EmbeddedButtonClick;
 end;
 
 procedure TBadgePositioneted.CreateParams(var Params: TCreateParams);
@@ -75,6 +81,17 @@ procedure TBadgePositioneted.Dark;
 begin
   shape.Color:= clBlack;
   shape.Font.Color:= clwhite;
+end;
+
+procedure TBadgePositioneted.DoEmbeddedButtonClick;
+begin
+  if Assigned(fOnButtonClick) then
+    fOnButtonClick(Self);
+end;
+
+procedure TBadgePositioneted.EmbeddedButtonClick(Sender: TObject);
+begin
+  DoEmbeddedButtonClick;
 end;
 
 procedure TBadgePositioneted.Info;
