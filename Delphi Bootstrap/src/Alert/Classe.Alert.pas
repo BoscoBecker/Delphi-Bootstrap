@@ -31,8 +31,8 @@ type
   public
     procedure MakeRounded(Control: TWinControl);
   published
-    property StyleAlert: TStyle index 0 read FStyleAlert write SetStyleAlert;
-    property TextAlert: String index 1 read FTextAlert write SetTextAlert;
+    property StyleAlert: TStyle read FStyleAlert write SetStyleAlert;
+    property TextAlert: String  read FTextAlert write SetTextAlert;
   end;
 
 
