@@ -29,15 +29,16 @@ object Form5: TForm5
     ParentColor = False
     TabOrder = 0
     OnButtonClick = TCardTitle1ButtonClick
-    StyleCard = Info
+    StyleCard = Danger
     ButtonVisible = True
+    CapionButton = 'Get Coke'
   end
   object TCardTitle2: TTCardTitle
     Left = 360
     Top = 128
     Width = 256
     Height = 369
-    Color = clMedGray
+    Color = clWhite
     Padding.Left = 5
     Padding.Top = 5
     Padding.Right = 10
@@ -46,7 +47,8 @@ object Form5: TForm5
     ParentColor = False
     TabOrder = 1
     OnButtonClick = TCardTitle2ButtonClick
-    StyleCard = Warning
+    StyleCard = Primary
     ButtonVisible = True
+    CapionButton = 'Get Pepsi'
   end
 end

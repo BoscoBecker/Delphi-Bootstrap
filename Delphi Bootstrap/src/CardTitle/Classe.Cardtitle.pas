@@ -26,6 +26,7 @@ type
     fOnButtonClick: TNotifyEvent;
     FStyleCard: TStyle;
     FButtonVisible: boolean;
+    FCapionButton: String;
 
     procedure CreateParams(var Params: TCreateParams); override;
     procedure PaintWindow(DC: HDC); override;
@@ -42,6 +43,7 @@ type
     procedure Ligth;
     procedure Dark;
     procedure SetButtonVisible(const Value: boolean);
+    procedure SetCapionButton(const Value: String);
 
   protected
     procedure DoEmbeddedButtonClick; virtual;
@@ -53,6 +55,7 @@ type
     property OnButtonClick: TNotifyEvent read fOnButtonClick write fOnButtonClick;
     property StyleCard: TStyle read FStyleCard write SetStyleCard;
     property ButtonVisible: boolean read FButtonVisible write SetButtonVisible;
+    property CapionButton: String read FCapionButton write SetCapionButton;
   end;
 
 procedure register;
@@ -153,6 +156,12 @@ begin
   button.Visible:= Value;
 
   FButtonVisible := Value;
+end;
+
+procedure TTCardTitle.SetCapionButton(const Value: String);
+begin
+  FCapionButton := Value;
+  Button.Caption:= FCapionButton;
 end;
 
 procedure TTCardTitle.SetCardPicture(const Value: TPicture);

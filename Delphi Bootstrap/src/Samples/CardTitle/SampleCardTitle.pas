@@ -35,13 +35,15 @@ begin
   TCardTitle1.MakeRounded(TCardTitle1.shape);
   TCardTitle1.MakeRounded(TCardTitle1.button);
   TCardTitle1.OnClick:= TCardTitle1.OnButtonClick;
-  //TCardTitle1.Image.Picture.LoadFromFile('C:\Users\Familia\Desktop\cocacola.jpg');
+  //Showmessage();Exit;
+  TCardTitle1.Image.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'cocacola.jpg');
 
   TCardTitle2.MakeRounded(TCardTitle2);
   TCardTitle2.MakeRounded(TCardTitle2.shapeInterno);
   TCardTitle2.MakeRounded(TCardTitle2.shape);
   TCardTitle2.MakeRounded(TCardTitle2.button);
   TCardTitle2.OnClick:= TCardTitle2.OnButtonClick;
+  TCardTitle2.Image.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'pepsi.jpg');
 
 end;
 
