@@ -35,7 +35,6 @@ begin
   TCardTitle1.MakeRounded(TCardTitle1.shape);
   TCardTitle1.MakeRounded(TCardTitle1.button);
   TCardTitle1.OnClick:= TCardTitle1.OnButtonClick;
-  //Showmessage();Exit;
   TCardTitle1.Image.Picture.LoadFromFile(ExtractFilePath(Application.ExeName)+'cocacola.jpg');
 
   TCardTitle2.MakeRounded(TCardTitle2);

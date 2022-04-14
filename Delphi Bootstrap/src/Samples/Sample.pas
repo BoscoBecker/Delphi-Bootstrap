@@ -42,8 +42,6 @@ begin
   Alert7.MakeRounded(Alert7);
   Alert8.MakeRounded(Alert8);
 
-  // Update Styles
-
   // Bord Rounded
   Alert9.MakeRounded(Alert9);
 

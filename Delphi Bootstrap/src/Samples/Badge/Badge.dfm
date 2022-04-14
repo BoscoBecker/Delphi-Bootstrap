@@ -15,13 +15,13 @@ object Form3: TForm3
   PixelsPerInch = 96
   TextHeight = 13
   object Badge1: TBadge
-    Left = 16
-    Top = 40
+    Left = 112
+    Top = 56
     Width = 158
     Height = 41
     TabOrder = 0
     StyleBadge = Dark
-    CaptionNotification = 'Notify'
+    CaptionNotification = ' Notify'
     OnButtonClick = Badge1ButtonClick
   end
   object Badge2: TBadge

@@ -4,7 +4,7 @@ object Form5: TForm5
   BorderIcons = [biSystemMenu]
   Caption = 'Card Title'
   ClientHeight = 541
-  ClientWidth = 692
+  ClientWidth = 639
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

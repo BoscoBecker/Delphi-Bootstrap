@@ -40,8 +40,6 @@ begin
   Badge2.MakeRounded(Badge2);
   Badge2.MakeRounded(Badge2.Notification);
 
-//  Badge3.MakeRounded(Badge3);
-//  Badge3.MakeRounded(Badge3.Notification);
 
 
 end;
