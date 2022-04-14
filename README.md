@@ -1,6 +1,6 @@
 # Delphi-Bootstrap
 
-Componentes Criados baseado em conceito de Bootstrap https://getbootstrap.com/
+Componentes Criados (Pascal) baseado em conceito de Bootstrap https://getbootstrap.com/
 
 Desde então desenvolvi alguns exemplos precisa ser lapidado a alterar os index das propertys,
 no entanto estou meio sem tempo e aos poucos irei melhorando
